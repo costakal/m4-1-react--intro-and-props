@@ -21,6 +21,10 @@
   margin: 20px;
 }
 
+.user-photo {
+  display: none;
+}
+
 .name,
 .user-name,
 .user-chat-bubble,
@@ -31,8 +35,12 @@
 .user-name,
 .name {
   margin-top: 10px;
-  font-weight: bold;
-  color: #525252;
+  font-size: 13px;
+  color: #797979;
+}
+
+.user-name {
+  display: none;
 }
 
 .user-chat-bubble,
