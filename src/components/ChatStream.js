@@ -11,11 +11,15 @@ import ChatMessage from "./ChatMessage";
 // - a text color of #000
 // - a background color of #e9e9eb
 
-const ChatStream = ({ messages }) => {
+const ChatStream = ({ messages, currentUser }) => {
   return (
     <section className="chat-stream">
       {messages.map((message) => {
-        return <ChatMessage message={message} />;
+        if (currentUser.username === message.user.username) {
+          return <ChatMessage message={message} messageType="sent" />;
+        } else {
+          return <ChatMessage message={message} messageType="received" />;
+        }
       })}
     </section>
   );

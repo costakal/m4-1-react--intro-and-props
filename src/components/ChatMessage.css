@@ -1,27 +1,51 @@
+.user-chat-message,
 .chat-message {
   display: flex;
+  position: relative;
 }
 
-.user-photo {
+.user-chat-message {
+  text-align: right;
+  float: right;
+}
+
+.chat-message {
+  clear: right;
+}
+
+.user-photo,
+.photo {
   height: 50px;
   width: 50px;
   border-radius: 25px;
   margin: 20px;
 }
 
+.name,
 .user-name,
+.user-chat-bubble,
 .chat-bubble {
   margin: 5px;
 }
 
-.user-name {
+.user-name,
+.name {
   margin-top: 10px;
   font-weight: bold;
   color: #525252;
 }
 
+.user-chat-bubble,
 .chat-bubble {
-  background-color: #e2e2e2;
   padding: 10px;
   border-radius: 15px;
+}
+
+.user-chat-bubble {
+  background-color: #448fff;
+  color: white;
+}
+
+.chat-bubble {
+  background-color: #e2e2e2;
 }
