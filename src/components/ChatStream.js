@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./ChatStream.css";
+import ChatMessage from "./ChatMessage";
 
 // The current user's messages should have:
 // - a text color of #FFF
@@ -14,7 +15,7 @@ const ChatStream = ({ messages }) => {
   return (
     <section className="chat-stream">
       {messages.map((message) => {
-        return message.body;
+        return <ChatMessage message={message} />;
       })}
     </section>
   );

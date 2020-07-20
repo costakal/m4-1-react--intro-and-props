@@ -1,0 +1,27 @@
+.chat-message {
+  display: flex;
+}
+
+.user-photo {
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  margin: 20px;
+}
+
+.user-name,
+.chat-bubble {
+  margin: 5px;
+}
+
+.user-name {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #525252;
+}
+
+.chat-bubble {
+  background-color: #e2e2e2;
+  padding: 10px;
+  border-radius: 15px;
+}
