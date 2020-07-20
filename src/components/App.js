@@ -7,9 +7,13 @@ import Footer from "./Footer";
 import "./App.css";
 
 const App = (props) => {
+  console.log(props);
   return (
     <div className="wrapper">
-      <Header />
+      <Header
+        currentUser={props.currentUser}
+        participants={props.conversation.participants}
+      />
       <ChatStream
         currentUser={props.currentUser}
         messages={props.conversation.messages}
