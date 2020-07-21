@@ -36,7 +36,7 @@
 .name {
   margin-top: 10px;
   font-size: 13px;
-  color: #797979;
+  color: #a0a0a0;
 }
 
 .user-name {
@@ -50,10 +50,23 @@
 }
 
 .user-chat-bubble {
-  background-color: #448fff;
+  background-color: #2e7ff8;
+  margin-right: 20px;
   color: white;
 }
 
 .chat-bubble {
-  background-color: #e2e2e2;
+  background-color: #e7e7e7;
+}
+
+.comic-sent {
+  position: absolute;
+  right: 9px;
+  bottom: 6px;
+}
+
+.comic-rec {
+  position: absolute;
+  bottom: 28px;
+  left: 83px;
 }

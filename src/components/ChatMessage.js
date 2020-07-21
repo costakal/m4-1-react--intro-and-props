@@ -16,6 +16,7 @@ const SentMessage = (props) => {
       <div>
         <p className="user-name">{props.message.user.username}</p>
         <p className="user-chat-bubble">{props.message.body}</p>
+        <img className="comic-sent" src="/assets/tip-sent.svg"></img>
       </div>
       <img
         className="user-photo"
@@ -37,6 +38,7 @@ const ReceivedMessage = (props) => {
       <div>
         <p className="name">{props.message.user.username}</p>
         <p className="chat-bubble">{props.message.body}</p>
+        <img className="comic-rec" src="/assets/tip-received.svg"></img>
       </div>
     </div>
   );
